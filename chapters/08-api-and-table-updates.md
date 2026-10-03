@@ -13,8 +13,11 @@ The constructor returns an API instance for the table. Store it when application
 ~~~js
 const staffTable = new DataTable("#staffTable", {
     pageLength: 10,
+    rowId: "id",
 });
 ~~~
+
+The rowId option maps each record id to the table row ID, so selectors such as #staff-104 target the intended record.
 
 The API has methods for tables, rows, columns, cells, and core behavior. Methods can be chained when they return the API instance. Read the reference for each method's return value, because some methods return data or DOM nodes instead.
 
@@ -125,7 +128,7 @@ Remove several rows by selector when the application has a clear selection rule:
 
 ~~~js
 staffTable
-    .rows(".expired-record")
+    .rows((index, data) => data.expired === true)
     .remove()
     .draw();
 ~~~
