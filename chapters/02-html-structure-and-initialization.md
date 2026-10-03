@@ -223,4 +223,4 @@ Do not call the constructor for a selector that may already have an active insta
 - [DataTables columns option](https://datatables.net/reference/option/columns)
 - [DataTables columnDefs option](https://datatables.net/reference/option/columnDefs)
 - [MDN: table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
-- [W3C WAI: tables with two headers](https://www.w3.org/WAI/tutorials/tables/two-headers/)
+- [MDN: table header cell](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)
